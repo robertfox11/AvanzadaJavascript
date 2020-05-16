@@ -1,4 +1,4 @@
-const person = {
+const javasript = {
   version: {
     nueva: "ES6",
     anterior: "ES5",
@@ -7,10 +7,10 @@ const person = {
   framework: ["React", "Vue", "Angular"],
 };
 //destructuring es extraer  valores de un objeto esta es antigua forma
-// console.log(person.version.anterior);
-// console.log(person.framework[0]);
+// console.log(javasript.version.anterior);
+// console.log(javasript.framework[0]);
 
 // Forma nueva
-let { version, framework } = person;
+let { version, framework } = javasript;
 console.log(version.year);
 console.log(framework[2]);
