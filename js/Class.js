@@ -1,31 +1,16 @@
-class Tarea {
-  constructor(name, priori) {
-    this.name = name;
-    this.priori = priori;
-  }
-  mostrar() {
-    console.log(`${this.name} tiene una prioridad ${this.priori}`);
-  }
-}
-//heredando clase padre que vien de tarea
-class Compra extends Tarea {
-  constructor(name, priori, count) {
-    //con super llammos los parametros que esta en la clase padre
-    super(name, priori);
-    this.name = name;
-    this.priori = priori;
-    this.count = count;
-  }
-  mostrar() {
-    super.mostrar();
-    console.log(`y la cantidad de ${this.count}`);
-  }
-}
-// crear objeto
-let tarea1 = new Tarea("React", "Alta");
+//hay que levantar el vpn
+import Tarea from "./tarea.js";
+// var tarea = require("./tarea");
+// console.log(Tareas);
+//exportando function en el defautl
+// const tarea1 = Tareas.functionTarea("pasear al perro", "Media");
+// console.log(tarea1);
+// console.log(tarea);
 
-// console.log(tarea1.mostrar());
-//llama
-let compro1 = new Compra("Class", "Alta", 3);
-console.log(compro1);
-compro1.mostrar();
+// function exportada
+// tareaCompletada();
+// const crearTare = crearTarea("pasear al perro", "Media");
+// console.log(crearTare);
+// Importando clase
+const tarea2 = new Tarea("REact", "alta");
+console.log(tarea2.mostrar());
